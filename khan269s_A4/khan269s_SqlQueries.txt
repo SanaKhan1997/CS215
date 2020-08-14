@@ -1,0 +1,47 @@
+**********************************************************************************************************************************
+NOTE: SQL Files that contains create table instructions are already uploaded on hercules, to run them on mysql write the following commands on mysql:
+
+source public_html/Users.sql;
+source public_html/Polls.sql;
+source public_html/Vote.sql;
+**********************************************************************************************************************************
+
+Data Storage Queries:
+
+a. SIGN UP FORM:
+
+INSERT INTO users(user_ID, email, user_Name, avatar, password) VALUES (1206, 'Alvin@hotmail.com', 'Alvin', 'https://avatarfiles.alphacoders.com/715/71560.jpg', 'al2222');
+
+b. POLL CREATION FORM:
+
+INSERT INTO Polls(poll_Id, question, answer_One, answer_Two, answer_Three, answer_Four, answer_Five, user_Id, open_Date, close_Date) VALUES (3004, 'Which device do you use the most?', 'Smart Watch', 'Laptop', 'Smartphone', 'Airpods', 'Apple Ipad', 1205, '2020-09-01 1:00:00', '2020-11-15 18:00:00');
+
+INSERT INTO Polls(poll_Id, question, answer_One, answer_Two, answer_Three, answer_Four, answer_Five, user_Id, open_Date, close_Date) VALUES (3005, 'Yout favourite pet?', 'Cat', 'Husky', 'Golden Retriever', 'Fish', 'MACAU', 1204, '2020-08-11 22:55:55', '2020-08-31 23:59:59');
+
+INSERT INTO Polls(poll_Id, question, answer_One, answer_Two, answer_Three, answer_Four, answer_Five, user_Id, open_Date, close_Date) VALUES (3006, 'Which social media platform do you prefer?', 'Instagram', 'Facebook', 'Twitter', 'Snapchat', 'LinkedIn', 1204, '2020-09-05 13:00:00','2020-09-15 22:00:00');
+
+c. POLL VOTE PAGE:
+
+INSERT INTO Vote(poll_Id, option_Three, vote_Date) VALUES (1205, option_Three + 1, NOW());
+
+Data Retrieval Queries:
+
+a. MAIN PAGE:
+
+SELECT * FROM Polls LIMIT 5;
+
+b. LOGIN FORM:
+
+SELECT DISTINCT user_ID, user_Name, avatar FROM users WHERE email = 'Alvin@hotmail.com' AND password = 'al2222';
+
+c. POLL MANAGEMENT PAGE:
+
+SELECT * FROM Polls WHERE user_Id = 1204;
+
+d. POLL VOTE PAGE:
+
+SELECT * FROM Polls Where poll_Id = 3002;
+
+e. POLL RESULTS PAGE:
+
+SELECT DISTINCT question, answer_One, answer_Two, answer_Three, answer_Four, answer_Five FROM Polls WHERE poll_Id = 3003 UNION SELECT DISTINCT vote_Date, option_One, option_Two, option_Three, option_Four, option_Five FROM Vote WHERE poll_Id = 3003;

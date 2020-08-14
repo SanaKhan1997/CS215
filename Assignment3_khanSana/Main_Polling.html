@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title> Polling Homepage</title>
+    <script type="text/javascript" src="validate_login.js"></script>
+    
+    
+    <link rel="stylesheet" type="text/css" href="PollingFormat.CSS">
+    
+    <link href='https://fonts.googleapis.com/css?family=Fascinate Inline' rel='stylesheet'>
+    
+    <link href='https://fonts.googleapis.com/css?family=Federo' rel='stylesheet'>
+    
+    <link href='https://fonts.googleapis.com/css?family=Dawning of a New Day' rel='stylesheet'>
+    
+    <style>
+    .err_msg{ color:red;}
+    </style>
+    
+</head>
+
+<body>
+     <aside id="sidebar-wrapper">
+            <ul class="sidebar-nav">
+                <li>
+                    <a href="PollVote.html">Vote Page</a>
+                </li>
+                <li>
+                    <a href="PollResults.html">View Results</a>
+                </li>
+                <li>
+                    <a href="PollSignUp.html">Sign Up</a>
+                </li>
+            </ul>
+        </aside>
+    <section>
+        <h1>Welcome to Micro-Polls </h1>
+        <h2 class = "quote">The ultimate real-time polling hub.</h2>
+    </section><br>
+    <section>
+       <form id="logIn" method="post">    
+           <table>
+               <tr><td><p id="email_msg"></p></td></tr>
+
+               <tr><td>Email: </td><td> <input id="email" type="text" name="email" size="30" /></td> </tr>
+               
+               <tr><td><p id ="pswd_msg"></p></td></tr>
+
+               <tr><td>Password: </td><td> <input id="pswd" type="password" name="password" size="30"/></td></tr>
+         
+           </table><br />
+           
+        </form>
+        <button onclick="loginForm(); return false" id = "login" value="Login" class="log b1" >Login</button><br/>
+        
+    <h3>OR<br>
+        Register as new user<br>
+    <button class = "log b1"><a href="PollSignUp.html">Sign Up</a></button><br>
+        </h3>
+    </section><br>
+    <section id="activepoll">
+        <h2>Recent Top 5</h2>
+        <h4><table>
+            <tr>
+                <th>#</th>
+                <th>Question</th>
+                <th>Options</th>
+                <th>Audience Poll</th>
+                <th>Date/time</th>
+            </tr>
+            <tr>
+                <td>1</td>
+                <td>Which superpower would you like to have?</td>
+                <td>
+                    <form>
+                        <input type="radio" id="telep" name="superpower" value="teleport">
+                        <label for="telep">Teleportation</label><br>
+                        
+                        <input type="radio" id="fly" name="superpower" value="fly">
+                        <label for="fly">Flying</label><br>
+                        <input type="radio" id="invisible" name="superpower" value="invisible">
+                        <label for="invisible">Invisibilty</label>
+                     </form>
+                 </td>
+                <td>
+                    <div class="container">
+                        <div class="skills html">40%</div>
+                    </div><br>
+                    <div class="container">
+                         <div class="skills html">20%</div>   
+                    </div><br>
+                    <div class="container">
+                        <div class="skills html">40%</div>
+                    </div>
+                
+                </td>
+                <td>
+                    07/16/2020
+                    18.00
+                
+                </td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td>What's the strangest thing you did while attending an online meeting?</td>
+                <td>
+                     <input type="radio" id="netflix" name="onlineclass" value="netflix">
+                        <label for="netflix">Watched Netflix</label><br>
+                        
+                        <input type="radio" id="ate" name="onlineclass" value="ate">
+                        <label for="ate">Ate Breakfast</label><br>
+                        <input type="radio" id="brush" name="onlineclass" value="brush">
+                        <label for="brush">Brushed my Teeth</label>
+                </td>
+                 <td>
+                    <div class="container">
+                        <div class="skills html">32%</div>
+                    </div><br>
+                    <div class="container">
+                         <div class="skills html">18%</div>   
+                    </div><br>
+                    <div class="container">
+                        <div class="skills html">40%</div>
+                    </div>
+                    <br>
+                    <div class="container">
+                        <div class="skills html">10%</div>
+                    </div>
+                
+                </td>
+                <td>
+                    07/16/2020 13.40
+                
+                </td>
+             </tr>
+            <tr>
+                <td>3</td>
+                <td>What type of zoomer are you?</td>
+                <td>
+                     <input type="radio" id="late" name="zoomer" value="late">
+                        <label for="late">Always Late</label><br>
+                        
+                        <input type="radio" id="nerd" name="zoomer" value="nerd">
+                        <label for="nerd">Nerd</label><br>
+                        <input type="radio" id="talkative" name="zoomer" value="talkative">
+                        <label for="talkative">Talking Robot</label><br>
+                        <input type="radio" id="sleepy" name="zoomer" value="sleepy">
+                        <label for="sleepy">Sleepy</label>
+                </td>
+                 <td>
+                    <div class="container">
+                        <div class="skills html">10%</div>
+                    </div><br>
+                    <div class="container">
+                         <div class="skills html">20%</div>   
+                    </div><br>
+                    <div class="container">
+                        <div class="skills html">72%</div>
+                    </div>
+                    <br>
+                    <div class="container">
+                        <div class="skills html">08%</div>
+                    </div>
+                
+                </td>
+                <td>02/22/2020
+                8.00</td>
+            </tr>
+             <tr>
+                <td>4</td>
+                <td>What do you think is the most serious issue the world faces today?</td>
+                <td>
+                     <input type="radio" id="climate" name="issue" value="climate">
+                        <label for="climate">Climate Change</label><br>
+                        
+                        <input type="radio" id="covid" name="issue" value="covid">
+                        <label for="covid">Covid-19</label><br>
+                        <input type="radio" id="poverty" name="issue" value="poverty">
+                        <label for="poverty">Corona Virus</label><br>
+                        <input type="radio" id="social" name="issue" value="social">
+                        <label for="social">Social Inequality</label>
+                </td>
+                  <td>
+                    <div class="container">
+                        <div class="skills html">46%</div>
+                    </div><br>
+                    <div class="container">
+                         <div class="skills html">04%</div>   
+                    </div><br>
+                    <div class="container">
+                        <div class="skills html">40%</div>
+                    </div>
+                    <br>
+                    <div class="container">
+                        <div class="skills html">10%</div>
+                    </div>
+                
+                </td>
+                <td>02/18/2020<br>
+                8.13</td>
+            </tr>
+        </table>
+        </h4>
+    
+    </section>
+   <script type="text/javascript" src="login-r.js"></script>
+</body>
+</html>
+    

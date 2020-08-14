@@ -1,0 +1,1 @@
+document.getElementById("SignUp").addEventListener("change", SignupForm, false);

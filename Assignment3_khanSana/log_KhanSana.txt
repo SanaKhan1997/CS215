@@ -1,0 +1,31 @@
+Name : Sana Khan
+Student Id : 200377106
+
+CS 215
+Class Assignement 3
+link to my CS website: http://www2.cs.uregina.ca/~khan269s/
+
+link to Main Page(Login): http://www2.cs.uregina.ca/~khan269s/Class_Assignment/Main_Polling.html
+link to Create new poll: http://www2.cs.uregina.ca/~khan269s/Class_Assignment/PollCreation.html
+link to Sign Up Page: http://www2.cs.uregina.ca/~khan269s/Class_Assignment/PollSignUp.html
+
+Files Included:
+
+1. Main_Polling.html: Created in last assignment for homepage. Contains login form.
+Note: Once user enter correct login elements the page will be directed to PollManagement.html where user will be able to select PollCreation.html.
+
+2. validate_login.js: Contain javascript methods for login validation.
+
+3. login-r.js: validation for login.
+
+4. PollSignUp.html: Created in last assignment contains Sign Up page.
+
+5. PollSignup.js: Javascript for sign up validation
+
+6. PollSignupr.js: javascript for sign up validation
+
+7. PollCreation.html: Created in last assignment contains form for posting new poll.
+
+8. validate_poll.js: Contains javascript for new poll form validation and dynamic character count.
+
+9. pollCreate_r.js: validation for new poll.

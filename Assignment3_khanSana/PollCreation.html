@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title> Poll Creation</title>
+    
+    <script type ="text/javascript" src = "validate_poll.js"></script>
+    
+    <link rel="stylesheet" type="text/css" href="PollingFormat.CSS">
+    
+    <link href='https://fonts.googleapis.com/css?family=Fascinate Inline' rel='stylesheet'>
+    
+    <link href='https://fonts.googleapis.com/css?family=Federo' rel='stylesheet'>
+    
+    <link href='https://fonts.googleapis.com/css?family=Dawning of a New Day' rel='stylesheet'>
+    
+    <style>
+        .err_msg{ color:red;}
+        .char{color: hotpink;}
+    </style>
+    
+</head>
+
+<body>
+     <aside id="sidebar-wrapper">
+            <ul class="sidebar-nav"><br>
+                <h5>Username</h5>
+                <img src="avatar.jpg" alt="avatar" width="100" height="100"><br><br>
+                <li class="sidebar-brand"><a href="Main_Polling.html">Main Page</a>
+                </li>
+                <li><a href="PollResults.html">View Results</a>
+                </li>
+                <li><a href="PollManagement.html">Manage Polls</a>
+                </li>
+            </ul>
+        </aside>
+    <section>
+        <h1>Create New Poll</h1>
+        <h2 class = "quote">Get to know other's opinion</h2>
+    </section><br>
+    <section>
+        <h3>
+        <form id="newpoll" method="post">
+            <label id="ques_msg" class="err_msg"></label>
+            <label>Question:</label><br/>
+            <textarea rows="4" cols="50" name="ques" id="ques" placeholder="Write question here..." onkeyup="countCharsQues(this);"></textarea>
+ 	        <p id="charNum" class="char"> 0/100 </p>
+            
+            <label id="open_msg" class="err_msg"></label>
+            <label>Open Date:</label>
+            <input type="date" id="odate">
+            <label>Time:</label>
+            <input type="time" id="otime"><br>
+            
+            <label id="close_msg" class="err_msg"></label>
+            <label>Close Date:</label>
+            <input type="date" id="cdate">
+            <label>Time:</label>
+            <input type="time" id="ctime"><br>
+            
+            <label id="ans_msg" class="err_msg"></label><br>
+            <label>Answer 1:</label>
+            <input type="text" id="ans1" onkeyup="countCharsAns(this,1);"><p id="charNumAns1" class="char"> 0/50 </p>
+        
+            <label>Answer 2:</label>
+            <input type="text" id="ans2" onkeyup="countCharsAns(this,2);">
+            <p id="charNumAns2" class="char"> 0/50 </p>
+            
+            <label>Answer 3:</label>
+            <input type="text" id="ans3" onkeyup="countCharsAns(this,3);">
+            <p id="charNumAns3" class="char"> 0/50 </p>
+            
+            <label>Answer 4:</label>
+            <input type="text" id="ans4" onkeyup="countCharsAns(this,4);">
+            <p id="charNumAns4" class="char"> 0/50 </p>
+            
+            <label>Answer 5:</label>
+            <input type="text" id="ans5" onkeyup="countCharsAns(this,5);">
+            <p id="charNumAns5" class="char"> 0/50 </p>
+        </form>
+            <button id="pollNew" class="log b1" onclick="pollForm()">Post</button>
+       
+        </h3>
+    </section>
+    <script type ="text/javascript" src = "pollCreate_r.js"></script>
+    </body>
+    
+</html>

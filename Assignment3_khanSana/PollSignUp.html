@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title> Sign Up</title>
+    <script type="text/javascript" src="PollSignup.js"></script>
+    
+    <link rel="stylesheet" type="text/css" href="PollingFormat.CSS">
+    
+    <link href='https://fonts.googleapis.com/css?family=Fascinate Inline' rel='stylesheet'>
+    
+    <link href='https://fonts.googleapis.com/css?family=Federo' rel='stylesheet'>
+    
+    <link href='https://fonts.googleapis.com/css?family=Dawning of a New Day' rel='stylesheet'>
+    
+    <style>
+    .err_msg{ color:red;}
+    </style>
+    
+</head>
+
+<body>
+    <aside id="sidebar-wrapper">
+            <ul class="sidebar-nav">
+                <li class="sidebar-brand">
+                    <a href="Main_Polling.html">
+                        Main Page
+                    </a>
+                </li>
+                
+                <li>
+                    <a href="PollResults.html">View Results</a>
+                </li>
+            </ul>
+        </aside>
+    <section>
+        <h1>Hey! New User</h1>
+        <h2>Fill the form below to become a part of our family
+        </h2><br>
+        
+        <h3>
+        <form action="PollSignup.php" id="PollSignup" method="post" enctype="multipart/form-data">
+              <label id = "email_msg" class="err_msg"></label><br/>
+              <label for="email">Email:</label>
+              <input type="text" id="email" name="email"><br>
+              
+              <label id="uname_msg" class="err_msg"></label><br/>
+              <label for="user">Username:</label>
+              <input type="text" id="user" name="user"><br><br>
+            
+              <label id ="image_msg" class="err_msg"></label><br/>
+              <label for="img">Select image:</label>
+              <input class="log b1" type="file" id="img" name="img" accept="image/*"><br>
+              <br>
+            
+              <label id="pswd_msg" class= "err_msg"></label><br/>
+              <label for="pwd">Password:</label>
+              <input type="text" id="pwd" name="pwd"><br>
+            
+              <label id="cpswd_msg" class="err_msg"></label><br/>
+              <label for="cpwd">Confirm Password:</label>
+              <input type="text" id="cpwd" name="cpwd"><br><br>
+            
+            <button type ="button" onclick="SignupForm()" id = "signup" class="log b1" >Sign Up</button>
+        </form>
+        
+        </h3>
+        
+    </section>
+    <script type="text/javascript" src="PollSignupr.js"></script>
+    </body>
+</html>

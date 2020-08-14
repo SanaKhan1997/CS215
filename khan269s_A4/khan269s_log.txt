@@ -1,0 +1,16 @@
+Name: Sana Khan
+SID: 200377106
+CS 215 ASSIGNMENT 4
+
+
+SQL username: khan269s
+SQL password: sana26
+
+
+FURTHER DETAILS:
+
+SQL files(Users.sql, Polls.sql, Vote.sql) for all tables are stored on hercules and also uploaded on my computer science website.
+
+http://www2.cs.uregina.ca/~khan269s/
+
+Further instructions are provided in file name khan269s_SqlQueries.txt that contains all the data storing and retreival queries.

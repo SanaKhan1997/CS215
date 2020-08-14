@@ -1,0 +1,1 @@
+document.getElementById("pollNew").addEventListener("change", pollForm, false);
